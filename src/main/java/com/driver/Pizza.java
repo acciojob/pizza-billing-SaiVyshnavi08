@@ -16,7 +16,7 @@ public class Pizza {
     private boolean isBackPackOpted ;
     private boolean  isBillGenerated;
 
-    private int pizzaprice;
+
 
     public Pizza(Boolean isVeg){
         this.isVeg= isVeg;
@@ -73,11 +73,11 @@ public class Pizza {
                bill = bill + "Extra Cheese Added: " + this.cheesePrice + "\n";
            }
            if (isToppingsAdded == true) {
-               bill = bill + "Extra Toppings Added:" + this.isToppingsAdded + "\n";
+               bill = bill + "Extra Toppings Added:" + this.ToppingsPrice + "\n";
            }
 
-           if (isBackPackOpted) {
-               bill = bill + "Paperbag Added:" + TakeAwayPrice + "\n";
+           if (isBackPackOpted == true) {
+               bill = bill + "Paperbag Added:" + this.TakeAwayPrice + "\n";
            }
            bill = bill + "Total Price: " + this.price + "\n";
        }
